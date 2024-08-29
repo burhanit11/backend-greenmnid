@@ -18,7 +18,7 @@ const getAllProducts = async (req, res) => {
       });
     } else {
       // If no search query is provided, return all products
-      products = await Product.find();
+      products = await Product.find({});
     }
     res.status(200).json({ message: "All Products", products });
   } catch (error) {}

@@ -5,6 +5,10 @@ import connectDB from "./utils/connectDB.js";
 dotenv.config();
 const PORT = process.env.PORT;
 
+app.get("/", (req, res) => {
+  res.json({ message: "Hello World from backend" });
+});
+
 connectDB()
   .then(() => {
     app.listen(PORT, () => {

@@ -8,7 +8,7 @@ const app = express();
 
 var corsOptions = {
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  origin: "http://localhost:5173",
+  origin: "https://backend-greenmnid-52js.vercel.app",
   Credential: true,
   optionsSuccessStatus: 200,
 };
